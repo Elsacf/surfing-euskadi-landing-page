@@ -5,36 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surfing Euskadi</title>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
-      <nav>
-        <img
-          src="./media/aa30-logo-euskadi-turismo.png"
-          alt="logo-esukadi-turismo"
-        />
-        <li>Descubre Euskadi</li>
-        <li>Enogastronomía</li>
-        <li>100% Basque</li>
-        <li>Planifica tu viaje</li>
-        <li>¿Qué buscas?</li>
-        <li>ES</li>
-      </nav>
-      <h1>Surfing Euskadi</h1>
-      <img src="./media/surfing-euskadi.svg" alt="surfing-euskadi" />
+      <div class="header__container">
+        <nav class="header__navbar bg-black bg-blur">
+          <div class="header__navbar-item-1">
+            <a
+              ><img
+                src="./media/aa30-logo-euskadi-turismo.png"
+                alt="logo-esukadi-turismo"
+                class="logo"
+            /></a>
+          </div>
+          <div class="header__navbar-item-2">
+            <a class="cl-white" href="#"
+              ><p class="item-2__text">Descubre Euskadi</p></a
+            >
+          </div>
+          <div class="header__navbar-item-3">
+            <a class="enogastronomia-mvl cl-white" href="#"
+              ><p>Eno-<br />gastronomía</p></a
+            >
+            <a class="enogastronomia-pc cl-white" href="#"
+              ><p>Enogastronomía</p></a
+            >
+          </div>
+          <div class="header__navbar-item-4">
+            <a class="cl-white" href="#"><p>Basque</p></a>
+          </div>
+          <div class="header__navbar-item-5">
+            <a class="cl-white" href="#"
+              ><p class="item-6__text">Planifica tu viaje</p></a
+            >
+          </div>
+          <div class="header__navbar-item-6">
+            <a class="cl-white" href="#"><p>¿Qué buscas?</p></a>
+          </div>
+          <div class="header__navbar-item-7">
+            <a class="cl-white" href="#"><p>ES</p></a>
+          </div>
+        </nav>
+        <div class="header__social">
+          <div class="social-icon-container">
+            <img class="social-icon" src="./media/icons/facebook.svg" alt="" />
+          </div>
+          <div class="social-icon-container">
+            <img class="social-icon" src="./media/icons/twitter.svg" alt="" />
+          </div>
+          <div class="social-icon-container">
+            <img class="social-icon" src="./media/icons/youtube.svg" alt="" />
+          </div>
+          <div class="social-icon-container">
+            <img class="social-icon" src="./media/icons/instagram.svg" alt="" />
+          </div>
+        </div>
+        <div class="header__title">
+          <h1 class="cl-white">Surfing Euskadi</h1>
+          <img
+            class="logo-surfing-euskadi"
+            src="./media/surfing-euskadi.svg"
+            alt="surfing-euskadi"
+          />
+        </div>
+      </div>
     </header>
 
-    <section>
-      <h2>EUSKALOHA!</h2>
-      <h3>La Euskadi del surf te da la bienvenida</h3>
-      <img src="./media/olas-tabla.svg" alt="dibujo-olas-tabla" />
+    <section class="text-section">
+      <h2 class="cl-gold">EUSKALOHA!</h2>
+      <h3 class="cl-blue-sea">La Euskadi del surf te da la bienvenida</h3>
+      <img
+        class="waves-icon"
+        src="./media/olas-tabla.svg"
+        alt="dibujo-olas-tabla"
+      />
       <p>
-        Destino pionero. El surf entró a la península por Euskadi. Con más de 50
-        rompientes para todos los niveles y una experimentada oferta de
-        servicios profesionales de surf integrados en el club SURFING EUSKADI,
-        la Costa Vasca es reconocida como uno de los principales destinos de
-        surf de Europa donde aprender, practicar e incluso ver, surf.
-        Combinación inigualable de planes para compaginar surf y turismo.
+        <strong>Destino pionero.</strong> El surf entró a la península por
+        Euskadi. Con más de 50 rompientes para todos los niveles y una
+        experimentada oferta de servicios profesionales de surf integrados en el
+        club SURFING EUSKADI, la Costa Vasca es reconocida como uno de los
+        principales destinos de surf de Europa donde aprender, practicar e
+        incluso ver, surf.
+        <strong
+          >Combinación inigualable de planes para compaginar surf y
+          turismo.</strong
+        >
         Visitar el Guggenheim por la mañana y surfear por la tarde. Divertirse
         intentando coger una ola en familia y reponer fuerzas con los mejores
         pintxos. Probar el mítico txuletón. Irte a una sagardotegi (sidrería).
@@ -45,11 +112,11 @@
       </p>
     </section>
 
-    <section>
+    <section class="cards-section">
       <h2>LAS OLAS</h2>
-      <img src="./media/mapa-xl.jpeg" alt="mapa-playas-xl" />
-      <div class="beaches-cards">
-        <div>
+      <!-- <img src="./media/mapa-xl.jpeg" alt="mapa-playas-xl" /> -->
+      <div class="cards-container">
+        <div class="card">
           <h4>La Arena</h4>
           <img
             src="./media/playas/surfing-olas-la_arena.jpeg"
@@ -71,7 +138,8 @@
             izquierda de Pobeña.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Barinatxe / La Salvaje</h4>
           <img src="./media/playas/surfing-olas-barinatxe.jpeg" alt="" />
           <ul>
@@ -88,7 +156,8 @@
             recorrido que puede aguantar bastante tamaño.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Arriatera</h4>
           <img src="./media/playas/surfing-olas-arriatera.jpeg" alt="" />
           <ul>
@@ -106,7 +175,8 @@
             excelente oferta de escuelas de surf y servicios.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Plentzia - Gorliz</h4>
           <img src="./media/playas/surfing-olas-plentzia.jpeg" alt="" />
           <ul>
@@ -124,7 +194,8 @@
             mucha mar.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Zentrala / La Central</h4>
           <img src="./media/playas/surfing-olas-central.jpeg" alt="" />
           <ul>
@@ -142,7 +213,8 @@
             secciones tuberas imposibles.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Bakio</h4>
           <img src="./media/playas/surfing-olas-bakio.jpeg" alt="" />
           <ul>
@@ -159,7 +231,8 @@
             Playa indicada para la iniciación al surf.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Mundaka</h4>
           <img
             src="./media/playas/surfing-olas-mundaka.jpeg"
@@ -180,7 +253,8 @@
             surfistas de todo tipo. Requiere nivel.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Laga</h4>
           <img
             src="./media/playas/surfing-olas-la_arena.jpeg"
@@ -201,7 +275,8 @@
             iniciación al surf.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Deba</h4>
           <img
             src="./media/playas/surfing-olas-deba.jpeg"
@@ -222,7 +297,8 @@
             aptas para surfistas de todos los niveles.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Zumaia</h4>
           <img src="./media/playas/surfing-olas-extra.jpeg" alt="" />
           <ul>
@@ -241,7 +317,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="card">
           <h4>Zarautz</h4>
           <img
             src="./media/playas/surfing-olas-la_arena.jpeg"
@@ -262,7 +338,8 @@
             de surf.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>La Zurriola</h4>
           <img
             src="./media/playas/surfing-olas-zurriola.jpeg"
@@ -285,7 +362,8 @@
         </div>
       </div>
     </section>
-    <section>
+
+    <section class="cards-section">
       <h2>SURF DE OLA GRANDE</h2>
       <img src="./media/ola-grande.svg" alt="" />
       <img src="./media/destacada_surfing-turismo_euskadi2x.jpeg" alt="" />
@@ -298,8 +376,9 @@
         dan en la temporada de otoño-invierno, desde el mes de octubre hasta el
         mes de febrero, pero siempre hay lugar para las sorpresas
       </p>
-      <div>
-        <div>
+
+      <div class="cards-container">
+        <div class="card">
           <h4>Punta Galea</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-galea.jpeg"
@@ -310,7 +389,8 @@
             el acantilado de La Galea desde donde se puede ver surf del grande.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Meñakoz</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-menakoz2.jpeg"
@@ -323,7 +403,8 @@
             ola, así como desde la cala.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Mundaka</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-mundaka.jpeg"
@@ -335,7 +416,8 @@
             cámaras y mucho ambiente.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Izaro</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-izaro.jpeg"
@@ -346,7 +428,8 @@
             Bermeo y Mundaka.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Sorginetxe</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-sorginetxe.jpeg"
@@ -357,7 +440,8 @@
             detalle.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Planeria / Playa Gris</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-playa_gris.jpeg"
@@ -370,7 +454,8 @@
             apenas 100 metros de distancia es de no creer.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Roka Puta / Izustarri</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-roca_puta.jpeg"
@@ -382,7 +467,8 @@
             que une Getaria y Zumaia.
           </p>
         </div>
-        <div>
+
+        <div class="card">
           <h4>Agiti</h4>
           <img
             src="./media/Surf de ola grande/surfing-gran_ola-agiti.jpeg"
@@ -398,46 +484,51 @@
 
     <section>
       <h2>CLUB SURFING EUSKADI</h2>
-      <div>
-        <img
-          src="./media/Club surfing Euskadi/destacados-escuelas.jpeg"
-          alt=""
-        />
-        <h4>Escuelas de surf</h4>
-        <p>
-          La mejor opción para iniciarse de forma segura en este deporte o
-          mejorar tu técnica de la mano de verdaderos profesionales.
-        </p>
-      </div>
-      <div>
-        <img
-          src="./media/Club surfing Euskadi/destacados-alojamientos.jpeg"
-          alt=""
-        />
-        <h4>Alojamientos Surf Friendly</h4>
-        <p>
-          La mejor opción para iniciarse de forma segura en este deporte o
-          mejorar tu técnica de la mano de verdaderos profesionales.
-        </p>
-      </div>
-      <div>
-        <img
-          src="./media/Club surfing Euskadi/destacados-surfcamps.jpeg"
-          alt=""
-        />
-        <h4>Surfcamps</h4>
-        <p>
-          Alojamientos creados en torno al surf con estancias, comidas y clases,
-          además de actividades complementaria.
-        </p>
-      </div>
-      <div>
-        <img src="./media/Club surfing Euskadi/destacados-otros.jpeg" alt="" />
-        <h4>Otros servicios especializados</h4>
-        <p>
-          Servicios especializados que harán más cómodo tu viaje de surf en
-          Euskadi.
-        </p>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="./media/Club surfing Euskadi/destacados-escuelas.jpeg"
+            alt=""
+          />
+          <h4>Escuelas de surf</h4>
+          <p>
+            La mejor opción para iniciarse de forma segura en este deporte o
+            mejorar tu técnica de la mano de verdaderos profesionales.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./media/Club surfing Euskadi/destacados-alojamientos.jpeg"
+            alt=""
+          />
+          <h4>Alojamientos Surf Friendly</h4>
+          <p>
+            La mejor opción para iniciarse de forma segura en este deporte o
+            mejorar tu técnica de la mano de verdaderos profesionales.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./media/Club surfing Euskadi/destacados-surfcamps.jpeg"
+            alt=""
+          />
+          <h4>Surfcamps</h4>
+          <p>
+            Alojamientos creados en torno al surf con estancias, comidas y
+            clases, además de actividades complementaria.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./media/Club surfing Euskadi/destacados-otros.jpeg"
+            alt=""
+          />
+          <h4>Otros servicios especializados</h4>
+          <p>
+            Servicios especializados que harán más cómodo tu viaje de surf en
+            Euskadi.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -454,6 +545,7 @@
       </p>
       <a href="">Descárgate nuestro folleto Surfing Euskadi</a>
     </section>
+
     <section>
       <h2>GRANDES EVENTOS INTERNACIONALES</h2>
       <li>ProZaratutz</li>
