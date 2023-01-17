@@ -19,6 +19,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 h1,
@@ -42,7 +43,7 @@ h1 {
 
 h2 {
   font-family: "Arvo", serif;
-  --min: 1.5em;
+  --min: 1.6em;
   --val: 4vw;
   --max: 2.25em;
   margin-bottom: 3vh;
@@ -65,15 +66,17 @@ h4 {
   margin: 1vh;
   --min: 1.2em;
   --val: 2.5vw;
-  --max: 1.8em;
+  --max: 1.4em;
 }
 
-p {
+p,
+a {
   font-family: Source Sans Pro;
   --min: 1em;
   --val: 2.5vw;
   --max: 1.2em;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 a {
@@ -97,6 +100,15 @@ ul {
   background-color: #a4c8d9;
 }
 
+.bg-dark-blue-sea {
+  background-color: #15aeb8;
+}
+
+.bg-light-light-blue {
+  background-color: #f3f9fa;
+  padding: 60px 10px 40px 10px;
+}
+
 .cl-white {
   color: #ffff;
 }
@@ -105,11 +117,23 @@ ul {
   color: #9e6b01;
 }
 
+.cl-dark-blue {
+  color: #0a5267;
+}
+
+.cl-electric-blue {
+  color: #016dec;
+}
+
 header {
   width: 100%;
   height: 100vh;
   background-image: url(/media/header-picture.jpg);
   background-size: cover;
+  margin-bottom: 10vh;
+}
+
+section {
   margin-bottom: 10vh;
 }
 
@@ -244,13 +268,16 @@ button.btn-slider {
 } */
 
 .cards-section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10vh;
 }
 .slider-container {
   display: flex;
   /* row-gap: 5vw; */
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow-x: scroll;
 }
 
@@ -264,6 +291,7 @@ button.btn-slider {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-bottom: 5vh;
 }
 
 .centered {
@@ -288,6 +316,82 @@ button.btn-slider {
 
 .mg-right-3 {
   margin-right: 3vh;
+}
+
+.sm-heigt {
+  height: 470px;
+}
+
+.main-text-image {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.main-text-image-item {
+  flex: 0 0 100%;
+}
+
+.regular-card-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.club-card {
+  flex: 0 0 100%;
+  border: 1px solid gray;
+  height: 70vh;
+}
+
+.club-card-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.club-content {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.club-content-item {
+  flex: 0 0 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+.btn {
+  background-color: #ffff;
+  color: #016dec;
+  border: 1px solid #016dec;
+  width: 85%;
+  height: 10%;
+  display: block;
+  background-image: url(/media/icons/arrow_right_alt_black_24dp.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align: center;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .club-card {
+    flex: 0 0 45%;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__navbar {
@@ -339,11 +443,26 @@ button.btn-slider {
     width: 70%;
     height: auto;
   }
+  .card {
+    height: 700px;
+  }
+  .sm-heigt {
+    height: 500px;
+  }
+  .main-text-image-item {
+    flex: 0 0 48%;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .waves-icon {
     width: 30%;
     height: auto;
+  }
+  .club-card {
+    flex: 0 0 22.5%;
+  }
+  .club-content-item {
+    flex: 0 0 45%;
   }
 }
