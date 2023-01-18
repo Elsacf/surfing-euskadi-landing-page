@@ -26,7 +26,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+a {
   font-size: clamp(var(--min), var(--val), var(--max));
   margin-block-start: 0;
   margin-block-end: 0;
@@ -35,7 +36,7 @@ p {
 h1 {
   font-family: "Arvo", serif;
   font-weight: 400;
-  --min: 2em;
+  --min: 2.5em;
   --val: 5vw;
   --max: 3em;
   text-align: center;
@@ -43,7 +44,7 @@ h1 {
 
 h2 {
   font-family: "Arvo", serif;
-  --min: 1.6em;
+  --min: 2em;
   --val: 4vw;
   --max: 2.25em;
   margin-bottom: 3vh;
@@ -69,8 +70,7 @@ h4 {
   --max: 1.4em;
 }
 
-p,
-a {
+p {
   font-family: Source Sans Pro;
   --min: 1em;
   --val: 2.5vw;
@@ -80,7 +80,13 @@ a {
 }
 
 a {
+  font-family: Source Sans Pro;
   text-decoration: none;
+  --min: 1.5em;
+  --val: 2.5vw;
+  --max: 2em;
+  text-align: center;
+  margin-bottom: 5vh;
 }
 
 img {
@@ -378,14 +384,37 @@ footer {
   background-color: #ffff;
   color: #016dec;
   border: 1px solid #016dec;
-  width: 85%;
-  height: 10%;
+  width: 100%;
+  height: auto;
   display: block;
-  background-image: url(/media/icons/arrow_right_alt_black_24dp.svg);
+  /* background-image: url(/media/icons/arrow_right_alt_black_24dp.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right; */
   text-align: center;
   padding-top: 10px;
+}
+
+.international-events {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/media/grandes-eventos-internacionales.jpg);
+  background-size: cover;
+  margin-bottom: 10vh;
+  padding-top: 20%;
+}
+
+.events-btn-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.events-btn-container-item {
+  flex: 0 0 100%;
 }
 
 @media screen and (min-width: 500px) {
@@ -451,6 +480,9 @@ footer {
   }
   .main-text-image-item {
     flex: 0 0 48%;
+  }
+  .events-btn-container-item {
+    flex: 0 0 45%;
   }
 }
 
