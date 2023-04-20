@@ -247,6 +247,7 @@ section {
   flex-flow: row wrap;
   gap: 2vw;
   flex: 0 0 100%;
+  background-color: rgb(205, 205, 205, 0.5);
 }
 
 .logo-surfing-euskadi {
@@ -635,7 +636,6 @@ footer {
   .header__title {
     margin-top: 50vh;
     flex: 0 0 50%;
-    background-color: rgb(205, 205, 205, 0.5);
   }
   .waves-icon {
     width: 70%;
