@@ -14,7 +14,7 @@ Proyecto de recreación a modo personal de la página de turismo de Euskadi. He 
 ---
 
 ## Ver ejemplo en vivo 👀
-De momento no puedes ver este proyecto en vivo, pero en breve podrás echarle un ojo.
+https://euskadi-surf-landing-page.netlify.app/
 
 ---
 
